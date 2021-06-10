@@ -6,17 +6,18 @@ class DishDetail extends Component{
     constructor(props){ 
         super(props);
         this.state={
+
         };
     }
 
-    renderDish(dish) {
+    renderDish(dishdetail) {
         return (
             <div className="col-12 col-md-5 m-1">
                 <Card>
-                    <CardImg top src={dish.image} alt={dish.name} />
+                    <CardImg top src={dishdetail.image} alt={dishdetail.name} />
                     <CardBody>
-                        <CardTitle>{dish.name}</CardTitle>
-                        <CardText>{dish.description}</CardText>
+                        <CardTitle>{dishdetail.name}</CardTitle>
+                        <CardText>{dishdetail.description}</CardText>
                     </CardBody>
                 </Card>
             </div>
@@ -35,11 +36,9 @@ class DishDetail extends Component{
                     <li key={cmt.id}>
                         <p align="left"> {cmt.comment} </p>
                         <p align="left">-- {cmt.author} ,
-                        {new Intl.DateTimeFormat('en-US', {
-                            month: 'long',
-                            day: '2-digit',
-                            year: 'numeric'
-                            }).format(new Date(cmt.date))} </p>
+                        {new Intl.DateTimeFormat('en-US', 
+                        { year: 'numeric', month: 'short', day: '2-digit'})
+                        .format(new Date(Date.parse(cmt.date)))}</p>
                     </li>
                 )
             })
@@ -55,13 +54,13 @@ class DishDetail extends Component{
     }
 
     render() {
-        const dish = this.props.dishdetail;
-        if(dish != null)
+        const dishdetail = this.props.dish;
+        if(dishdetail != null)
         {
             return (
                 <div className="row">
-                    {this.renderDish(dish)}
-                    {this.renderComments(dish.comments)}
+                    {this.renderDish(dishdetail)}
+                    {this.renderComments(dishdetail.comments)}
                 </div>
             )
         }
