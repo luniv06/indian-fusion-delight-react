@@ -24,8 +24,7 @@ function Footer(props) {
                             HONG KONG<br />
                             <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
                             <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-                            <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">
-                                confusion@food.net</a>
+                            <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
                         </address>
                     </div>
                     <div className="col-12 col-sm-4 align-self-center">
