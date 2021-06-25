@@ -6,7 +6,7 @@ import {
 import { Link } from 'react-router-dom';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Loading } from './LoadingComponent'
+import { Loading } from './LoadingComponent';
 
 class CommentForm extends Component {
     constructor(props) {
@@ -152,7 +152,7 @@ const DishDetail = (props) => {
                 </div>
             </div>
         );
-    }
+    } 
     else if (props.dish != null) {
         return (
             <div className="container">
