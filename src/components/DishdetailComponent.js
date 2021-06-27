@@ -8,6 +8,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 class CommentForm extends Component {
     constructor(props) {
@@ -92,6 +93,11 @@ class CommentForm extends Component {
 function RenderDish({ dish }) {
     return (
         <div className="col-12 col-md-5 m-1">
+            <FadeTransform
+                in
+                transformProps={{
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }}>
             <Card>
                 <CardImg width="100%" top src={baseUrl + dish.image} alt={dish.name} />
                 <CardBody>
@@ -99,6 +105,7 @@ function RenderDish({ dish }) {
                     <CardText>{dish.description}</CardText>
                 </CardBody>
             </Card>
+            </FadeTransform>
         </div>
     );
 }
@@ -110,9 +117,10 @@ function RenderComments({ comments, postComment, dishId }) {
             <div></div>
         )
     }
-
+    //<Stagger in> 
     const comment = comments.map(cmt => {
         return (
+            <Fade in>
             <li key={cmt.id}>
                 <p align="left"> {cmt.comment} </p>
                 <p align="left">-- {cmt.author} ,
@@ -120,8 +128,10 @@ function RenderComments({ comments, postComment, dishId }) {
                         { year: 'numeric', month: 'short', day: '2-digit' })
                         .format(new Date(Date.parse(cmt.date)))}</p>
             </li>
+            </Fade>
         )
     })
+    //</Stagger>
 
     return (
         <div className='col-12 col-md-5 m-1'>
