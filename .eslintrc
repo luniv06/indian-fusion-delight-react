@@ -1,0 +1,9 @@
+{
+    "plugins": [
+      "react"
+    ],
+    "extends": ["eslint:all", "plugin:react/all"],
+    "sourceType": "module",
+    "parserOptions": {  "ecmaVersion" : 8 }
+  }
+  

@@ -3147,7 +3147,7 @@
     "emoji-regex" "^6.1.0"
     "jsx-ast-utils" "^1.4.0"
 
-"eslint-plugin-react@^7.1.0", "eslint-plugin-react@7.4.0":
+"eslint-plugin-react@^7.1.0", "eslint-plugin-react@^7.4.0", "eslint-plugin-react@7.4.0":
   "integrity" "sha512-tvjU9u3VqmW2vVuYnE8Qptq+6ji4JltjOjJ9u7VAOxVYkUkyBZWRvNYKbDv5fN+L6wiA+4we9+qQahZ0m63XEA=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.4.0.tgz"
   "version" "7.4.0"
@@ -3165,7 +3165,7 @@
     "esrecurse" "^4.1.0"
     "estraverse" "^4.1.1"
 
-"eslint@^2.10.2 || ^3 || ^4", "eslint@^3.0.0 || ^4.0.0", "eslint@^4.1.1", "eslint@>=1.6.0 <5.0.0", "eslint@>=2.0.0", "eslint@2.x - 4.x", "eslint@4.10.0":
+"eslint@^2.10.2 || ^3 || ^4", "eslint@^3.0.0 || ^4.0.0", "eslint@^4.1.1", "eslint@^4.10.0", "eslint@>=1.6.0 <5.0.0", "eslint@>=2.0.0", "eslint@2.x - 4.x", "eslint@4.10.0":
   "integrity" "sha512-MMVl8P/dYUFZEvolL8PYt7qc5LNdS2lwheq9BYa5Y07FblhcZqFyaUqlS8TW5QITGex21tV4Lk0a3fK8lsJIkA=="
   "resolved" "https://registry.npmjs.org/eslint/-/eslint-4.10.0.tgz"
   "version" "4.10.0"

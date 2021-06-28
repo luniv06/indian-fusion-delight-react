@@ -46,7 +46,10 @@
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "bootstrap-social": "^5.1.1",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
     "prop-types": "^15.7.2",
     "react-animation-components": "^3.0.0",
     "react-redux": "^7.2.4",
